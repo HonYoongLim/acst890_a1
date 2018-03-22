@@ -1,0 +1,50 @@
+Q1
+ Fibo=function(n){
+  +     x = c(1,1)
+  +     for(i in 3:n) x[i] = x[i-1] + x[i-2]
+  +     return(x)}
+ Fibo(20)
+
+
+
+Q3
+#a
+dataset=read.csv(file.choose(),header=T)
+
+#b
+attach(dataset) 
+summary(total)
+var(total)
+sd(total)
+
+#c
+hist(total, main="Histogram of the dollar values of the claims",xlab="claim size", breaks=22036) 
+setdel=finmonth-accmonth
+
+#d
+hist(setdel,main="Histogram of settlement delay", xlab="settlement delay",breaks=max(setdel))
+
+#e
+counts=table(legrep) 
+pro.table=counts/sum(counts)
+barplot(pro.table,names.arg=c("no","yes"),main="Histogram of legal representation variable")
+
+#f
+inj3b=as.numeric(as.character(inj3)) #f
+inj3b[inj3b==0]=NA
+inj2[inj2==0]=NA
+inj=c(inj1,inj2,inj3b,inj4,inj5)
+inj=table(inj)
+inj.pro=inj/sum(inj)
+inj.pro
+ barplot(inj.pro,main="Histogram of injury code",xlab="Injury Code",ylab="percentage")
+
+#h
+hist(log(total),main="Histogram of log dollar values of the claims", xlab="log(claim size)") 
+
+#i
+plot(op_time,total,main="claim size vs operational time",xlab="operational time",ylab="claim size")
+ plot(op_time,log(total),main="log claim size vs operational time",xlab="operational time",ylab="log(claim size)")
+
+#k
+ plot(op_time,log(total),xlab="operational time",ylab="log(claim size)",col=ifelse((legrep==0),"blue","red")) #k
