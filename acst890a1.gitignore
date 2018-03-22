@@ -30,7 +30,7 @@ pro.table=counts/sum(counts)
 barplot(pro.table,names.arg=c("no","yes"),main="Histogram of legal representation variable")
 
 #f
-inj3b=as.numeric(as.character(inj3)) #f
+inj3b=as.numeric(as.character(inj3)) 
 inj3b[inj3b==0]=NA
 inj2[inj2==0]=NA
 inj=c(inj1,inj2,inj3b,inj4,inj5)
@@ -47,7 +47,7 @@ plot(op_time,total,main="claim size vs operational time",xlab="operational time"
  plot(op_time,log(total),main="log claim size vs operational time",xlab="operational time",ylab="log(claim size)")
 
 #k
- plot(op_time,log(total),xlab="operational time",ylab="log(claim size)",col=ifelse((legrep==0),"blue","red")) #k
+ plot(op_time,log(total),xlab="operational time",ylab="log(claim size)",col=ifelse((legrep==0),"blue","red")) 
 
 
 
