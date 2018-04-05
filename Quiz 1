@@ -33,4 +33,4 @@ done
 echo
 
 chmod u+x Fibonacci.sh
-./Fibonacci.sh
+./Fibonacci.sh 20
