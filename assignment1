@@ -1,6 +1,6 @@
 #Question 2
 import random 
-toss=random.randint(0,1) #Toss variable ‘s value is randomly generated as integer o ir 1
+toss=random.randint(0,1) #Toss variable ‘s value is randomly generated as integer 0 0r 1
 if toss==0:
    print("Heads")
 else:
@@ -54,5 +54,5 @@ while True:
                  b=a+b
                  print(b)
                  counter=counter+1
-     elif number<0:
+     elif number<=0:
          print("Please enter a positive integer.")
