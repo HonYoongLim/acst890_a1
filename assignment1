@@ -29,7 +29,7 @@ elif (income > 180000):
 else:
   pass
 
-print("Income of $", format(income, ",.2f"),"the income tax payable is $" + format(tax, ".2f") +".","the after-tax income is $" + format(a, ".2f") +".")
+print("Income of $", format(income, ",.2f"),"the income tax payable is $" + format(tax, ".2f") +",","the after-tax income is $" + format(a, ".2f") +".")
 
 
 
