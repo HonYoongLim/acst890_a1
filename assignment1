@@ -1,3 +1,4 @@
+#Question 2
 import random 
 toss=random.randint(0,1) #Toss variable ‘s value is randomly generated as integer o ir 1
 if toss==0:
@@ -10,28 +11,33 @@ else:
 
 
 
-
+#Question 3
 income = float(input("Enter the income: "))
 if (income >= 0) and (income <= 18200):
   tax = (0*income)
+  a = income-tax
 elif (income > 18200) and (income <= 37000):
   tax = (0.19 * (income-18200))
+  a = income-tax
 elif (income > 37000) and (income <= 87000):
   tax = 3572 + (0.325*(income-37000))
+  a = income-tax
 elif (income > 87000) and (income <= 180000):
   tax = 19822 + (0.37*(income-87000))
+  a = income-tax
 elif (income > 180000):
   tax = 54532 + (0.45*(income-180000))
+  a = income-tax
 else:
   pass
 
-print("Income of $", format(income, ",.2f"),"the income tax payable is $" + format(tax, ".2f") +".")
+print("Income of $", format(income, ",.2f"),"the income tax payable is $" + format(tax, ".2f") +".","the after-tax income is $" + format(a, ".2f") +".")
 
 
 
 
 
-
+#Question 4
 while True:
      counter=1
      print("How many numbers to generate")
