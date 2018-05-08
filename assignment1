@@ -9,8 +9,6 @@ else:
 
 
 
-
-
 #Question 3
 income = float(input("Enter the income: "))
 if (income >= 0) and (income <= 18200):
